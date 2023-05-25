@@ -2,9 +2,15 @@
 #include "lists.h"
 
 /**
+<<<<<<< HEAD
  * get_func - selects the proper function
  * @parsed: the bytecode file line sent to main.
  * Return: a pointer to the selected function, or NULL if it fails.
+=======
+ * get_func - picks the appropriate function
+ * @parsed: bytecode file line given to main
+ * Return: a reference to the selected function, or NULL if the function fails.
+>>>>>>> a276b32c74361b72a94bfdb9e14bfd04e6a8651b
  *
  */
 void (*get_func(char **parsed))(stack_t **, unsigned int)
@@ -42,9 +48,16 @@ void (*get_func(char **parsed))(stack_t **, unsigned int)
 }
 
 /**
+<<<<<<< HEAD
  * Push_handler - handles the push instruction
  * @stack: a double pointer to the stack you want to push to.
  * @line_number: The file's line number
+=======
+ * push_handler - takes care of the push instruction
+ * @stack: a double pointer to the stack to which you want to push.
+ * @line_number: the line number in the file
+ *
+>>>>>>> a276b32c74361b72a94bfdb9e14bfd04e6a8651b
  */
 void push_handler(stack_t **stack, unsigned int line_number)
 {
@@ -82,9 +95,16 @@ void push_handler(stack_t **stack, unsigned int line_number)
 }
 
 /**
+<<<<<<< HEAD
  *pall_handler - the pall instruction is dealt with by the pall_handler.
  * @stack: is a double-pointer to the stack you want to push.
  * @line_number: the file's line number
+=======
+ * pall_handler - deals with the pall instruction.
+ * @stack: a double pointer to the stack to which you want to push.
+ * @line_number: the line number in the file
+ *
+>>>>>>> a276b32c74361b72a94bfdb9e14bfd04e6a8651b
  */
 void pall_handler(stack_t **stack, unsigned int line_number)
 {
@@ -92,4 +112,7 @@ void pall_handler(stack_t **stack, unsigned int line_number)
 	if (*stack)
 		print_dlistint(*stack);
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> a276b32c74361b72a94bfdb9e14bfd04e6a8651b

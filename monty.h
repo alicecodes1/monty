@@ -8,12 +8,23 @@
 #include <unistd.h>
 
 /**
+<<<<<<< HEAD
  * struct stack_s - the doubly linked list representation of a stack (or queue).
  * @n: a positive integer
  * @prev: refers to the preceding member of the stack (or queue).
  * @next: refers to the item on the stack (or queue) after it.
  * Description: The ALX project's doubly linked list node
  * A stack, queue, LIFO, and FIFO structure.
+=======
+ * struct stack_s - a stack's (or queue's) doubly linked list representation
+ * @n: an integer
+ * @prev: refers to the stack's (or queue's) preceding element
+ * @next: refers to the next item on the stack (or queue).
+ *
+ * Description: ALX project's doubly linked list node
+ * structure for stacks, queues, LIFO, and FIFO.
+ *
+>>>>>>> a276b32c74361b72a94bfdb9e14bfd04e6a8651b
  */
 typedef struct stack_s
 {
@@ -23,11 +34,21 @@ typedef struct stack_s
 } stack_t;
 
 /**
+<<<<<<< HEAD
  * instruction_s struct- opcodes  function
  * @opcode: the code for the operation
  * @f: method for handling opcodes
  * Definitions: stack, queues, LIFO, and FIFO.
  * Opcode and function for the ALX project
+=======
+ * instruction_s struct - opcode and its function
+ * @opcode: the operation code
+ * @f: opcode handling function
+ *
+ * Description: stack, queues, LIFO, FIFO
+ * ALX project opcode and function
+ *
+>>>>>>> a276b32c74361b72a94bfdb9e14bfd04e6a8651b
  */
 typedef struct instruction_s
 {
@@ -36,12 +57,23 @@ typedef struct instruction_s
 } instruction_t;
 
 /**
+<<<<<<< HEAD
  *  struct args_s  - principal argument structure
  * @av: the command line's filename
  * @ac: the total number of arguments from the main function.
  * @line_number: the file's current line number
  * Description: command-line arguments passed to main
  * used in a variety of functions, organized in a struct for clarity.
+=======
+ * struct args_s - primary argument structure
+ * @av: the filename from the command line
+ * @ac: total number of arguments from the main
+ * @line_number: the current line number in the file
+ *
+ * Description: command-line arguments supplied to main that are
+ * utilized in various functions, arranged in a struct for clarity.
+ *
+>>>>>>> a276b32c74361b72a94bfdb9e14bfd04e6a8651b
  */
 typedef struct args_s
 {
@@ -51,12 +83,21 @@ typedef struct args_s
 } args_t;
 
 /**
+<<<<<<< HEAD
  * struct data_s - external data that can be accessed from functions.
  * @line: the line number in the file
  * @words: previously parsed line
  * @stack: a pointer to a stack
  * @fptr: a file pointer
  * @qflag: flag for a queue or stack
+=======
+ * struct data_s - external data to be accessed from within functions
+ * @line: the file's line
+ * @words: line that has been parsed
+ * @stack: a stack pointer
+ * @fptr: pointer to a file
+ * @qflag: queue or stack flag
+>>>>>>> a276b32c74361b72a94bfdb9e14bfd04e6a8651b
  *
  */
 typedef struct data_s
