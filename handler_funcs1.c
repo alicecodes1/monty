@@ -1,8 +1,9 @@
+#define _POSIX_C_SOURCE 200809L
+
 #include "monty.h"
 #include "lists.h"
-
+#include <stdio.h>
 /**
-<<<<<<< HEAD
  * pint_handler - handles the pint command.
  * @stack: a double pointer  referencing to the stack you want to push to
  * @line_number: the file's line number
@@ -11,7 +12,6 @@
  * @stack: a double pointer to the stack to which you want to push.
  * @line_number: the line number in the file
  *
->>>>>>> a276b32c74361b72a94bfdb9e14bfd04e6a8651b
  */
 void pint_handler(stack_t **stack, unsigned int line_number)
 {
@@ -28,7 +28,6 @@ void pint_handler(stack_t **stack, unsigned int line_number)
 }
 
 /**
-<<<<<<< HEAD
  * pop_handler - handles the pop instruction
  * @stack: a double pointer to the stack you want to push to.
  * @line_number: the file's line number
@@ -37,7 +36,6 @@ void pint_handler(stack_t **stack, unsigned int line_number)
  * @stack: a double pointer to the stack to which you want to push.
  * @line_number: the line number in the file
  *
->>>>>>> a276b32c74361b72a94bfdb9e14bfd04e6a8651b
  */
 void pop_handler(stack_t **stack, unsigned int line_number)
 {
@@ -54,7 +52,6 @@ void pop_handler(stack_t **stack, unsigned int line_number)
 }
 
 /**
-<<<<<<< HEAD
  * swap_handler - handles the swap instruction
  * @stack: a double pointer to the stack you want to push to.
  * @line_number: the file's line number
@@ -63,7 +60,6 @@ void pop_handler(stack_t **stack, unsigned int line_number)
  * @stack: a double pointer to the stack to which you want to push.
  * @line_number: the line number in the file
  *
->>>>>>> a276b32c74361b72a94bfdb9e14bfd04e6a8651b
  */
 void swap_handler(stack_t **stack, unsigned int line_number)
 {
@@ -90,16 +86,13 @@ void swap_handler(stack_t **stack, unsigned int line_number)
 }
 
 /**
-<<<<<<< HEAD
  * add_handler - handles the add command.
  * @stack: a double pointer to the stack you want to push to.
  * @line_number: the file's line number
-=======
  * add_handler - takes care of the add command.
  * @stack: a double pointer to the stack to which you want to push.
  * @line_number: the line number in the file
  *
->>>>>>> a276b32c74361b72a94bfdb9e14bfd04e6a8651b
  */
 void add_handler(stack_t **stack, unsigned int line_number)
 {
@@ -128,7 +121,6 @@ void add_handler(stack_t **stack, unsigned int line_number)
 }
 
 /**
-<<<<<<< HEAD
  * nop_handler - handles the nop instruction
  * @stack: a double pointer to the stack you want to push to.
  * @line_number: the file's line number
@@ -137,14 +129,9 @@ void add_handler(stack_t **stack, unsigned int line_number)
  * @stack: a double pointer to the stack to which you want to push.
  * @line_number: the line number in the file
  *
->>>>>>> a276b32c74361b72a94bfdb9e14bfd04e6a8651b
  */
 void nop_handler(stack_t **stack, unsigned int line_number)
 {
 	(void)stack;
 	(void)line_number;
-}
-<<<<<<< HEAD
-
-=======
->>>>>>> a276b32c74361b72a94bfdb9e14bfd04e6a8651b
+}	

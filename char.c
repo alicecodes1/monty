@@ -1,10 +1,14 @@
+#define _POSIX_C_SOURCE 200809L 
+
 #include "monty.h"
 #include "lists.h"
+#include <stdio.h>
+#include <stdarg.h>
 
 /**
- * The pchar_handler - is handled by pchar_handler.
- * @stack: a double pointer to the stack that will be pushed to.
- * @line_number: the file's line number
+ * pchar_handler - handles the "pchar" instruction.
+ * @stack: a double pointer to the stack that will be accessed.
+ * @line_number: the line number of the instruction in the file.
  */
 void pchar_handler(stack_t **stack, unsigned int line_number)
 {
@@ -29,9 +33,9 @@ void pchar_handler(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * The pstr_handler - is handled by pstr_handler.
- * @stack: a double pointer to the stack that will be pushed to.
- * @line_number: the file's line number
+ * pstr_handler - handles the "pstr" instruction.
+ * @stack: a double pointer to the stack that will be accessed.
+ * @line_number: the line number of the instruction in the file.
  */
 void pstr_handler(stack_t **stack, unsigned int line_number)
 {
@@ -53,4 +57,3 @@ void pstr_handler(stack_t **stack, unsigned int line_number)
 
 	putchar('\n');
 }
-

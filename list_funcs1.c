@@ -1,7 +1,9 @@
+#define _POSIX_C_SOURCE 200809L
+
 #include "monty.h"
+#include <stdio.h>
 
 /**
-<<<<<<< HEAD
  * dlistint_len - returns the number of nodes in a doubly linked list.
  * @h:a link to the list
  * Return: total number of nodes.
@@ -11,7 +13,6 @@
  *
  * Return: the number of nodes.
  *
->>>>>>> a276b32c74361b72a94bfdb9e14bfd04e6a8651b
  */
 size_t dlistint_len(const dlistint_t *h)
 {
@@ -30,7 +31,6 @@ size_t dlistint_len(const dlistint_t *h)
 }
 
 /**
-<<<<<<< HEAD
  * add_dnodeint - inserts a new node at the beginning of the list.
  * a double linked list
  * @head: a list with two pointers
@@ -44,7 +44,6 @@ size_t dlistint_len(const dlistint_t *h)
  *
  * Return: the new element's address, or NULL if it failed.
  *
->>>>>>> a276b32c74361b72a94bfdb9e14bfd04e6a8651b
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
@@ -71,7 +70,6 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 }
 
 /**
-<<<<<<< HEAD
  * print_dlistint - returns a double link list
  * @h: a list pointer
  * Return:the numb of nodes in the list.
@@ -81,7 +79,6 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
  *
  * Return: the number of nodes in the list
  *
->>>>>>> a276b32c74361b72a94bfdb9e14bfd04e6a8651b
  */
 size_t print_dlistint(const dlistint_t *h)
 {
@@ -101,7 +98,6 @@ size_t print_dlistint(const dlistint_t *h)
 }
 
 /**
-<<<<<<< HEAD
  * delete_dnodeint_at_index - removes a node at a specified index.
  * A doubly linked list index.
  * @head: a list with double  pointers
@@ -115,7 +111,6 @@ size_t print_dlistint(const dlistint_t *h)
  *
  * Return: 1 if successful, -1 if unsuccessful.
  *
->>>>>>> a276b32c74361b72a94bfdb9e14bfd04e6a8651b
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
@@ -149,7 +144,6 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 }
 
 /**
-<<<<<<< HEAD
  * get_dnodeint_at_index - retrieves the nth node in a doubly linked list.
  * @head: a pointer to a list
  * @index: the index of the node to return
@@ -161,7 +155,6 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
  *
  * Return the node's address, or NULL if it does not exist.
  *
->>>>>>> a276b32c74361b72a94bfdb9e14bfd04e6a8651b
  */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
@@ -178,7 +171,3 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 
 	return (head ? head : NULL);
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> a276b32c74361b72a94bfdb9e14bfd04e6a8651b

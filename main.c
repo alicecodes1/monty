@@ -1,10 +1,11 @@
+#define _POSIX_C_SOURCE 200809L
+
 #include "monty.h"
 #include "lists.h"
 
 data_t data = DATA_INIT;
 
 /**
-<<<<<<< HEAD
  * monty - is an auxiliary function to the main function.
  * @args: pointer to the struct containing the main arguments
  * Description: reads from the opcodes file.
@@ -18,7 +19,6 @@ data_t data = DATA_INIT;
  * then calls the function that finds the
  * appropriate executing function.
  *
->>>>>>> a276b32c74361b72a94bfdb9e14bfd04e6a8651b
  */
 void monty(args_t *args)
 {
@@ -63,7 +63,6 @@ void monty(args_t *args)
 }
 
 /**
-<<<<<<< HEAD
  * main - the entry point for the monty bytecode interpreter.
  * @argc: the number of arguments
  * @argv: array of arguments
@@ -75,7 +74,6 @@ void monty(args_t *args)
  *
  * EXIT_SUCCESS or EXIT_FAILURE is returned.
  *
->>>>>>> a276b32c74361b72a94bfdb9e14bfd04e6a8651b
  */
 int main(int argc, char *argv[])
 {
@@ -89,7 +87,3 @@ int main(int argc, char *argv[])
 
 	return (EXIT_SUCCESS);
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> a276b32c74361b72a94bfdb9e14bfd04e6a8651b

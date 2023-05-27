@@ -1,6 +1,8 @@
+#define _POSIX_C_SOURCE 200809L
+
 #include "monty.h"
 #include "lists.h"
-
+#include <stdio.h>
 /**
 * sub_handler - takes care of the sub instruction
 * @stack: a double pointer to the stack to which you want to push.

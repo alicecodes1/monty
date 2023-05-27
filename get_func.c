@@ -1,6 +1,8 @@
+#define _POSIX_C_SOURCE 200809L
+
 #include "monty.h"
 #include "lists.h"
-
+#include <stdio.h>
 /**
 <<<<<<< HEAD
  * get_func - selects the proper function
@@ -112,7 +114,3 @@ void pall_handler(stack_t **stack, unsigned int line_number)
 	if (*stack)
 		print_dlistint(*stack);
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> a276b32c74361b72a94bfdb9e14bfd04e6a8651b
